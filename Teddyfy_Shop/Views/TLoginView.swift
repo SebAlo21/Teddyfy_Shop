@@ -17,7 +17,7 @@ struct TLoginView: View {
         }else{
             NavigationView(){
                 ZStack{
-                Color("user_C_Pink")
+                Color("user_C_Orange")
                         .edgesIgnoringSafeArea(.all)
                     VStack(){
                         VStack(alignment:.center){
@@ -27,7 +27,6 @@ struct TLoginView: View {
                             Text("Lorem Ipsum is simply dummy text ")
                                 .foregroundStyle(Color(.gray).opacity(0.9))
                         }.padding(.horizontal)
-                        
                         
                         VStack(spacing:20){
                             TextField("Ingrese su correo",text: $email)
@@ -44,8 +43,6 @@ struct TLoginView: View {
                         .padding(.horizontal,50)
                         .padding(.vertical,40)
                         
-                        
-                        
                             RoundedRectangle(cornerRadius: 16)
                                 .frame(width: 300,height: 60)
                                 .foregroundStyle(Color("user_C_Black"))
@@ -60,9 +57,6 @@ struct TLoginView: View {
                                         nextView = true
                                     }
                                 }
-                            
-                        
-                        
                         Spacer()
                         HStack(spacing:20){
                             RoundedRectangle(cornerRadius: 16)
@@ -84,8 +78,6 @@ struct TLoginView: View {
                                         .resizable().scaledToFit()
                                         .frame(width: 50)
                                 }
-                            
-                            
                         }.padding(.bottom,10)
                         
                         NavigationLink(destination:TRegisterView() ){
@@ -96,14 +88,7 @@ struct TLoginView: View {
                         
                     }
                     .padding(.top,100)
-                    
-                    
-                    
-                    
                 }
-                
-                
-                
             }
         }
     }

@@ -18,10 +18,10 @@ struct SplashView: View {
                 Color("user_C_Orange")
                     .edgesIgnoringSafeArea(.all)
                 RoundedRectangle(cornerRadius: 24)
-                    .foregroundStyle(.red)
+                    .foregroundStyle(Color("user_C_White"))
                     .frame(width: 100,height: 100)
                     .overlay{
-                        Image(systemName: "heart.fill")
+                        Image(systemName: "photo")
                             .resizable().scaledToFit()
                             .frame(width: 60)
                             .onTapGesture {

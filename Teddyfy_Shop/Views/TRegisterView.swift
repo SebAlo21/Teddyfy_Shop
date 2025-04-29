@@ -17,7 +17,7 @@ struct TRegisterView: View {
         }else{
             NavigationView(){
                 ZStack{
-                Color("user_C_Pink")
+                Color("user_C_Orange")
                         .edgesIgnoringSafeArea(.all)
                     VStack(){
                         VStack(alignment:.center){

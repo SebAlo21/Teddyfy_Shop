@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TMenuView: View {
-    @State private var username:String = "anonimo";
+    @State private var username:String = "";
     let items = Array(1...10)
     let columns = [
         GridItem(.flexible()),
@@ -22,7 +22,6 @@ struct TMenuView: View {
                 .edgesIgnoringSafeArea(.all)
             
             ScrollView{
-                
                 
                 VStack(){
                     ZStack(){
